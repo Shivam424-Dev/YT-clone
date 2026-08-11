@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package.json",
   "name": "yt-clone",
   "version": "1.0.0",
   "description": "A clone of youtube with twitter integratted.",
@@ -8,9 +9,15 @@
   ],
   "license": "ISC",
   "author": "Shivam Sandilya",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "prettier": "^3.9.6"
   }
 }
